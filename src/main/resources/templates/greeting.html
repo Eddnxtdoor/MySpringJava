@@ -1,10 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            background-color: #fafafa;
+        }
+
+        h1 {
+            font-weight: bold;
+            color: #222;
+        }
+
+        p {
+            font-size: 18px;
+            color: #444;
+        }
+
+        img {
+            margin: 10px;
+            width: 90%;
+            max-width: 700px;
+            border-radius: 6px;
+        }
+    </style>
 </head>
 <body>
-$END$
+
+<h1 th:text="'Hello, ' + ${name} + '!'"></h1>
+
+<p>My favourite car is an Audi RS7</p>
+
+<img th:src="@{/back.jpg}" alt="Back of Audi RS7" />
+<img th:src="@{/interior.jpg}" alt="Interior of Audi RS7" />
+<img th:src="@{/Outside.jpg}" alt="Outside view of Audi RS7" />
+
 </body>
 </html>
