@@ -14,4 +14,4 @@ This is my Java Labs Task 1. t uses Spring Boot and Thymeleaf to display a greet
 
 
 ## Screenshots
-![Proof Screenshot](screenshot/proof.jpg)
+![Proof Screenshot](Screenshots/proof.jpg)
